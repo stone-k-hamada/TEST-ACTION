@@ -3,7 +3,7 @@
 echo "start"
 
 sshpass -p $AWS_PASS ssh -t -t $AWS_LOGIN bash -c "
-sudo mkdir /TESTDIR
+mkdir /test/TESTDIR
 "
 
 echo "end"
