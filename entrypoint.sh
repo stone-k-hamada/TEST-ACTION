@@ -3,8 +3,18 @@
 echo "start"
 
 sshpass -p XXX ssh -t -t ${AWS_LOGIN} bash -c "
-cd
 sudo mkdir /TESTDIR
+echo "AAAAAAA"
+echo "AAAAAAA"
+echo "AAAAAAA"
+echo "AAAAAAA"
+echo "AAAAAAA"
+echo "AAAAAAA"
+echo "AAAAAAA"
+echo "AAAAAAA"
+echo "AAAAAAA"
+echo "AAAAAAA"
+echo "AAAAAAA"
 "
 
 echo "end"
