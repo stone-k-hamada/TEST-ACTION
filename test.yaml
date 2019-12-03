@@ -1,0 +1,5 @@
+# test.yml
+name: 'test'
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
