@@ -2,9 +2,9 @@
 
 echo "start"
 
-sshpass -p $AWS_PASS ssh -t -o StrictHostKeyChecking=no $AWS_LOGIN
+sshpass -p $AWS_PASS ssh -t -t -o StrictHostKeyChecking=no $AWS_LOGIN
 
-sshpass -p $AWS_PASS ssh -t $AWS_LOGIN bash -c "'
+sshpass -p $AWS_PASS ssh $AWS_LOGIN bash -c "'
 touch test-action
 mkdir /test/TESTDIRA
 '"
