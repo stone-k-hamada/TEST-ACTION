@@ -3,6 +3,7 @@
 echo "start"
 
 sshpass -p ${AWS_PASS} ssh -t -t ${AWS_LOGIN} bash -c "
+cd
 sudo mkdir /TESTDIR
 "
 
