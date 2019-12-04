@@ -17,8 +17,8 @@ echo "transported zip file."
 
 sshpass -p $AWS_PASS ssh $AWS_LOGIN bash -c "'
 cd /test
-unzip dist.zip -l
-unzip dist.zip -o -j
+unzip -l dist.zip
+unzip -o -j dist.zip
 '"
 
 echo "end"
