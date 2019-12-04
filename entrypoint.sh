@@ -3,6 +3,8 @@
 echo "start"
 
 echo "create a zip file from my github repository"
+cd ~/ && ls -a
+cd ./ && ls -a
 cd /test && ls -a
 zip -r /test/dist.zip / -x \*/.git/\* \*/.github/\*
 cd /test && ls -a
