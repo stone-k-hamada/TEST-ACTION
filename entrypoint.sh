@@ -4,7 +4,7 @@ echo "Start"
 
 echo "Create a zip file from my github repository."
 cd ./test && ls -a
-zip -r dist ./test
+zip -r dist ./
 # -x \*/.git/\* \*/.github/\*
 echo "zip file created."
 
