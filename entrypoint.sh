@@ -16,7 +16,9 @@ sshpass -p $AWS_PASS scp dist.zip ${AWS_LOGIN}:${HOME_DIR}
 echo "transported zip file."
 
 sshpass -p $AWS_PASS ssh $AWS_LOGIN bash -c "'
-sudo mkdir /test
+cd /test
+unzip dist.zip -l
+unzip dist.zip -o -j
 '"
 
 echo "end"
