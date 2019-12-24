@@ -16,12 +16,12 @@ echo "transported zip file."
 
 sshpass -p $AWS_PASS ssh $AWS_LOGIN bash -c "'
 cd /usr/local/knight
-rm -rf tmp_zip
-mkdir tmp_zip
-unzip dist.zip -d tmp_zip
-cp -Rpf tmp_zip/. ./
-rm -rf tmp_zip
-rm dist.zip
+sudo rm -rf tmp_zip
+sudo mkdir tmp_zip
+sudo unzip dist.zip -d tmp_zip
+sudo cp -Rpf tmp_zip/. ./
+sudo rm -rf tmp_zip
+sudo rm dist.zip
 '"
 
 echo "end"
